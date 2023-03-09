@@ -74,7 +74,7 @@ body{
         background: rgb(19, 61, 109);
         background: -moz-radial-gradient(circle, rgb(19, 56, 98) 0%, rgba(21,41,64,1) 100%);
         background: -webkit-radial-gradient(circle, rgba(15,48,85,1) 0%, rgba(21,41,64,1) 100%);
-        background: radial-gradient(circle, rgb(11, 34, 62) 0%, rgb(20, 42, 69)) 100%);
+        background: radial-gradient(circle, rgb(11, 34, 62) 0%, rgb(20, 42, 69) 100%);
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0f3055",endColorstr="#152940",GradientType=1); 
 
     }
@@ -83,6 +83,7 @@ body{
         margin: .2em;
         
     }
+
 button{
     white-space: nowrap;
 }
