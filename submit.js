@@ -41,18 +41,16 @@ async function handleSubmit(e){
         return;
     }
     // console.log(formData,file[0]);
-    
-    // return;
     // const header = {
     //     // header
     //     // "Application-type":"x"
     // }
-    // const response = await fetch('apiroute:port/route',{
-    //     method:'POST',
-    //     body:file
-    // });
-    // let result = await response.json();
-
+  
+    const response = await fetch('/upload',{
+        method:'POST',
+        body: formData
+    });
+    let result = await response.json();
     // const res = {
     //     success: boolean,
     //     message: string,
