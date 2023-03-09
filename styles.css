@@ -142,6 +142,7 @@ button{
         scale: .9;
     }
 
+
 .transcribe-btn{
     background-color:  #0c407c;
     border: none;
@@ -149,7 +150,8 @@ button{
     padding: .2em;
     border: 2px solid #5a98e4;
     color:white;
-    margin-top: 1em;
+    margin-top: 2em;
+    margin-bottom: .5em;
     border-radius: .2em;
     -webkit-border-radius: .2em;
     -moz-border-radius: .2em;
@@ -164,6 +166,34 @@ button{
     cursor: pointer;
 }
 
-.status{
+.transcribe-btn.disabled{
+    cursor: not-allowed;
+    scale: .9 !important;
+    background-color: #06192e;
+    border: 1px solid rgb(16, 25, 44);
+    color: #102843;
+
+}
+.status.loading{
     color:#3F72AF;
+    animation: beat 1s infinite;
+    -webkit-animation: beat 1s infinite;
+}
+
+@keyframes beat {
+    from{
+        opacity: 1;
+        filter: hue-rotate(0deg);
+        -webkit-filter: hue-rotate(0deg);
+}
+    50%{
+        opacity: .2;
+        filter: hue-rotate(-50deg);
+        -webkit-filter: hue-rotate(-50deg);
+}
+    to{
+        opacity: 1;
+        filter: hue-rotate(0deg);
+        -webkit-filter: hue-rotate(0deg);
+    }
 }

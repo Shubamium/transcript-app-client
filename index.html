@@ -28,7 +28,8 @@
                         </div>
                         <input type="file" id="uploader" required style="display:none;" name="toTranscribe" name="audio" accept="audio/*, video/*" required/>
 
-                        <button type="submit" class="transcribe-btn"> Transcribe <i class="fa-solid fa-feather-pointed"></i></button> 
+                        <button type="submit" class="transcribe-btn" id="submiter" class="disabled"> Transcribe <i class="fa-solid fa-feather-pointed"></i></button> 
+                        <p class="status loading" id="submit-status"></p>
                     </div>
                 </form>
 
