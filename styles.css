@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;800&display=swap');
+
+*{
+  font-family:'Golos Text', sans-serif;
+  margin:0;
+  padding:0;
+  box-sizing:borde-box;
+  letter-spacing: 140%;
+}
+
+.form-label{
+  font-weight:bold;
+}
+
+input[type="file"]{
+  /* display:none; */
+}
+
+h2{
+    color:#F9F7F7;
+}
+p{
+    opacity: .9;
+}
+
+hr{
+    background-color: #F9F7F7;
+    height: 3px;
+    border: none;
+    margin: .4em 0;
+}
+
+body{
+    color: #DBE2EF;
+    background-color:#102843;
+}
+
+
+
+
+#app{
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-content: stretch;
+    min-height: 100vh;
+}
+
+
+#app .result-container{
+    /* background-color: red; */
+    padding: 2em;
+    background: rgb(12, 44, 80);
+    background: -moz-radial-gradient(circle, rgba(15,48,85,1) 0%, rgba(21,41,64,1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(15,48,85,1) 0%, rgba(21,41,64,1) 100%);
+    background: radial-gradient(circle, rgba(15,48,85,1) 0%, rgba(21,41,64,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0f3055",endColorstr="#152940",GradientType=1); 
+}
+
+    #app .result-container textarea{
+        width: 95%;
+        resize:none;
+        background-color: #8bb3ff6a;
+        border: 2px solid white;
+        padding: .5em;
+        border-radius: .2em;
+        margin: .5em .2em;
+        height: 80%;
+        color: white;
+        -webkit-border-radius: .2em;
+        -moz-border-radius: .2em;
+        -ms-border-radius: .2em;
+        -o-border-radius: .2em;
+        background: rgb(19, 61, 109);
+        background: -moz-radial-gradient(circle, rgb(19, 56, 98) 0%, rgba(21,41,64,1) 100%);
+        background: -webkit-radial-gradient(circle, rgba(15,48,85,1) 0%, rgba(21,41,64,1) 100%);
+        background: radial-gradient(circle, rgb(11, 34, 62) 0%, rgb(20, 42, 69)) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0f3055",endColorstr="#152940",GradientType=1); 
+
+    }
+
+    #app .result-container h2{
+        margin: .2em;
+        
+    }
+button{
+    white-space: nowrap;
+}
+#app .form-container{
+    background-color: #0b223c;
+    height: 100%;
+    border-left: 12px solid rgb(18, 37, 58);
+}
+
+    #app .form-container .form-title{
+        padding: 1em;
+        background-color: #06192e;
+    }
+    
+    #app .form-container .form-control{
+        margin-top: 2em;
+        padding: .5em;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        max-width: 70%;
+        margin: .4em auto;
+    }
+
+#app .upload-btn{
+    background-color: #06192e;
+    border: none;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.047);
+    font-size: 1.4rem;
+    font-family:'Golos Text', sans-serif;
+    color: white;
+    padding: .5em;
+
+    border-radius: .5em;
+    -webkit-border-radius: .5em;
+    -moz-border-radius: .5em;
+    -ms-border-radius: .5em;
+    -o-border-radius: .5em;
+    cursor: pointer;
+    
+    margin: .2em 0;
+
+    transition: all 250ms ease;
+    -webkit-transition: all 250ms ease;
+    -moz-transition: all 250ms ease;
+    -ms-transition: all 250ms ease;
+    -o-transition: all 250ms ease;
+}
+
+    #app .upload-btn:hover, .transcribe-btn:hover{
+        background-color: #1e3052;
+        scale: 1.02;
+    }
+    #app .upload-btn:active, .transcribe-btn:active{
+        background-color: #28406c;
+        scale: .9;
+    }
+
+.transcribe-btn{
+    background-color:  #0c407c;
+    border: none;
+    font-size: 1rem;
+    padding: .2em;
+    border: 2px solid #5a98e4;
+    color:white;
+    margin-top: 1em;
+    border-radius: .2em;
+    -webkit-border-radius: .2em;
+    -moz-border-radius: .2em;
+    -ms-border-radius: .2em;
+    -o-border-radius: .2em;
+    transition: all 250ms ease;
+    -webkit-transition: all 250ms ease;
+    -moz-transition: all 250ms ease;
+    -ms-transition: all 250ms ease;
+    -o-transition: all 250ms ease;
+    
+    cursor: pointer;
+}
+
+.status{
+    color:#3F72AF;
+}

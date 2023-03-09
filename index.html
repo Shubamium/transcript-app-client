@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Transcript App</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/bb83019d49.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <main id="app">
+                 <!--  Upload Form  -->
+                <form action="/upload" method="post" id="upload-form" enctype="multipart/form-data" class="form-container">
+                    
+                    <div class="form-title">
+                        <h2> <i class="fa-solid fa-headphones-simple"></i>  Audio Transcriber</h2>
+                        <hr>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ea quasi non.</p>
+                    </div>
+                    <div class="form-control">
+                        <label class="form-label">Select the file:</label>
+                        <div class="div">
+                            <button type="button" class="upload-btn" onclick="openUpload()"><i class="fa-solid fa-upload"></i> Upload File </button>
+                            <p class="status" id="file-status">No File Selected</p>
+                        </div>
+                        <input type="file" id="uploader" required style="display:none;" name="toTranscribe" name="audio" accept="audio/*, video/*" required/>
+
+                        <button type="submit" class="transcribe-btn"> Transcribe <i class="fa-solid fa-feather-pointed"></i></button> 
+                    </div>
+                </form>
+
+                <!-- Result -->
+                <div class="result-container">
+                    <h2>Transcript</h2>
+                    <textarea id="result" disabled placeholder="Result will show up here. . . "></textarea>
+                </div>
+
+
+    </main>
+    <script src="submit.js"></script>
+
+</body>
+</html>
